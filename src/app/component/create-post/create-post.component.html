@@ -1,0 +1,23 @@
+<h2>Create Post</h2>
+<form [formGroup]="postForm" (submit)="onSubmit()" method="post" enctype="multipart/form-data">
+    <label for="author">Username:</label>
+    <input type="text" formControlName="author" required />
+    <span
+      class="error"
+      *ngIf="postForm.get('author')?.invalid && postForm.get('author')?.touched"
+    >
+        Username cannot be empty
+    </span>
+    <label for="content">Post:</label>
+    <textarea formControlName="content" required ></textarea>
+    <span
+      class="error"
+      *ngIf="postForm.get('content')?.invalid && postForm.get('content')?.touched"
+    >
+        Post content cannot be empty
+    </span>
+    <label for="image">Upload an image (optional):</label>
+    <input type="file" (change)="changeFile($event)" />
+    <button type="submit" [disabled]="!postForm.valid">Submit</button>
+</form>
+<p *ngIf="failed()" class="error">Failed to create post</p>

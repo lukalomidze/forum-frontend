@@ -1,0 +1,27 @@
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+label {
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    aspect-ratio: 3/2;
+}
+
+.error {
+    text-align: left;
+    color: #da0909;
+    font-size: 0.9em;
+    margin: 0;
+    margin-top: 16px;
+    text-align: center;
+}
