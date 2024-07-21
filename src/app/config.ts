@@ -1,0 +1,1 @@
+export const backendUrl = 'https://backend-container-app.ashyflower-3312f080.germanywestcentral.azurecontainerapps.io';
