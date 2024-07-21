@@ -1,0 +1,8 @@
+<div class="title">
+    <span class="author">{{ post.author }}</span>
+    <span>
+        {{ getDateDifference(post.creationTime) }} ago
+    </span>
+</div>
+<article>{{ post.content }}</article>
+<img *ngIf="post.imageUrl != null" src={{post.imageUrl}} alt="Post image" />

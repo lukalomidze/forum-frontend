@@ -1,0 +1,27 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 2px solid lightgray;
+    padding: 16px;
+    border-radius: 8px;
+    width: max(200px, 40%);
+    
+    .title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .author {
+        text-align: left;
+        font-weight: 600;
+    }
+    
+    img {
+        object-fit: contain;
+    }
+
+    article {
+        text-align: justify;
+    }
+}
