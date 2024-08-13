@@ -2,6 +2,8 @@
 
 Frontend of the forum app developed as a Cloud Computing class miniproject
 
+Built with Angular
+
 Features:
 1. Post creation, optionally including an image
 2. Viewing posts
